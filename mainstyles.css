@@ -1,6 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Shadows+Into+Light&display=swap');
+
 body {
-   max-width: 600px;
+   max-width: 1000px;
    margin: 100px auto;
-   text-align: center;
-   background-color: pink;
+   background-color: white;
+   color: rgb(110, 110, 143);
+   font-family: 'Rajdhani', sans-serif;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 75px 300px 200px 300px;;
+   ;
+}
+h3 {
+   margin-bottom: -5px;
+}
+span {
+   padding: 0 5px;
+   font-size: 20px;
+}
+
+body aside {
+   max-width: 300px;
+   grid-column-start: 1;
+   grid-row-start: 4;
+   font-size: 27px;
+}
+
+footer {
+   padding: 5px;
+   grid-row-start: 5;
+}
+
+.homename {
+   font-size: 150px;
+   line-height: 175px;
+   font-family: 'Shadows Into Light', cursive;
+   grid-column-start: 1;
+   grid-row-start: 2;
+}
+
+header {
+   grid-column: 1/2;
+   font-size: 30px;
+}
+
+header a {
+   text-decoration: none;
+}
+
+header a:visited {
+   color: rgb(110, 110, 143);
+}
+
+header a:link {
+   color: rgb(110, 110, 143);
+}
+
+header a:hover {
+   color: #E6AF2E;
+}
+
+#homeimage {
+   width: 500px;
+   grid-column-start: 2;
+   grid-row-start: 1;
+   border-radius: 100px;
 }
