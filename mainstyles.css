@@ -1,65 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Shadows+Into+Light&display=swap');
 
-#homebody {
-   max-width: 1000px;
-   margin: 100px auto;
-   background-color: white;
-   color: rgb(110, 110, 143);
-   font-family: 'Rajdhani', sans-serif;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 75px 300px 200px 300px;
-}
-
 body {
    max-width: 1000px;
    margin: auto;
    font-family: 'Rajdhani', sans-serif;
-   color: rgb(110, 110, 143);
    font-size: 20px;
-}
-
-h3 {
-   margin-bottom: -5px;
-}
-
-span {
-   padding: 0 5px;
-   font-size: 20px;
-}
-
-body aside {
-   max-width: 300px;
-   grid-column-start: 1;
-   grid-row-start: 4;
-   font-size: 27px;
-}
-footer a {
-   text-decoration: none;
-}
-footer a:visited {
+   background-color: white;
    color: rgb(110, 110, 143);
-}
-
-footer a:link {
-   color: rgb(110, 110, 143);
-}
-
-footer a:hover {
-   color: #E6AF2E;
-}
-
-footer {
-   padding: 5px;
-   grid-row-start: 5;
-}
-
-.homename {
-   font-size: 150px;
-   line-height: 175px;
-   font-family: 'Shadows Into Light', cursive;
-   grid-column-start: 1;
-   grid-row-start: 2;
 }
 
 header {
@@ -83,9 +30,62 @@ header a:hover {
    color: #E6AF2E;
 }
 
+span {
+   padding: 0 5px;
+   font-size: 20px;
+}
+
+#homebody {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 75px 300px 200px 300px;
+}
+
 #homeimage {
    width: 500px;
    grid-column-start: 2;
    grid-row-start: 1;
    border-radius: 100px;
+}
+
+.homename {
+   font-size: 150px;
+   line-height: 175px;
+   font-family: 'Shadows Into Light', cursive;
+   grid-column-start: 1;
+   grid-row-start: 2;
+}
+
+
+
+body aside {
+   max-width: 300px;
+   grid-column-start: 1;
+   grid-row-start: 4;
+   font-size: 27px;
+}
+
+footer a {
+   text-decoration: none;
+}
+
+footer a:visited {
+   color: rgb(110, 110, 143);
+}
+
+footer a:link {
+   color: rgb(110, 110, 143);
+}
+
+footer a:hover {
+   color: #E6AF2E;
+}
+
+footer {
+   padding: 5px;
+   grid-row-start: 5;
+}
+
+h3 {
+   margin-bottom: -5px;
 }
