@@ -1,6 +1,41 @@
 @media only screen and (max-width: 37.5em) {
 
+   body {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      background-color: white;
+      color: rgb(110, 110, 143);
+      margin: 1em;
+   }
+
+   header {
+      font-size: 1em;
+   }
+
+   span {
+      padding: 0 .2em;
+      font-size: 1em;
+   }
+
    #homebody {
-      background-color: purple;
+      grid-template-rows: 50px 100px 150px 200px;
+   }
+
+   #homeimage {
+      width: 200px;
+      border-radius: 3em;
+   }
+
+   .homename {
+      font-size: 4em;
+      line-height: 1em;
+   }
+
+   body aside {
+      max-width: 275px;
+      font-size: 1em;
+   }
+   footer {
+      font-size: .8em;
    }
 }
