@@ -1,0 +1,30 @@
+@media only screen and (max-width: 37.5em) {
+
+    body {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1em;
+        margin: 1em;
+    }
+
+    #title {
+        font-size: .7em;
+    }
+
+    #designColumns {
+        display: block;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 25px;
+        background-color: white;
+        color: rgb(110, 110, 143);
+    }
+
+    article {
+        margin: 2em;
+        font-size: .8em;
+    }
+
+    footer {
+        font-size: 1.2em;
+        padding: .2em 0;
+    }
+}

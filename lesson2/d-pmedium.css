@@ -1,0 +1,12 @@
+@media only screen and (max-width: 850px) {
+    body {
+        margin: 1em;
+        max-width: 750px;
+    }
+    
+    #designColumns {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    
+}
