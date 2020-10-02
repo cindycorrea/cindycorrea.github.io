@@ -75,7 +75,10 @@ th {
 th {
     text-align: left;
 }
-
+li {
+    list-style-type: square;
+    padding: .2em;
+}
 #yellow {
     width: 100%;
     background-color: #eab934;
