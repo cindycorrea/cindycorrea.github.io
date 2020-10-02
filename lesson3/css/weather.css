@@ -37,8 +37,8 @@ h3 {
     background-color: #465c69;
     text-align: center;
     color: #f2f4ff;
-    border-top: 5px solid #a9d3ff;
-    border-bottom: 5px solid #a9d3ff;
+    border-top: 5px solid #C2DFFF;
+    border-bottom: 5px solid #C2DFFF;
 }
 
 #menu span {
@@ -48,8 +48,7 @@ h3 {
 a {
     text-decoration: none;
 }
-
-a:visited {
+#menu a:link {
     color: #f2f4ff;
 }
 
@@ -64,7 +63,7 @@ a:visited {
 table {
     width: 75%;
     margin: auto;
-    border: 2px solid #eab934;
+    border: .2em solid #eab934;
 }
 
 tr,
