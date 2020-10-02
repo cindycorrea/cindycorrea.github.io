@@ -47,6 +47,9 @@ h3 {
 a {
     text-decoration: none;
 }
+a:visited {
+    color: #f2f4ff;
+}
 
 #menu a:visited {
     color: #f2f4ff;
