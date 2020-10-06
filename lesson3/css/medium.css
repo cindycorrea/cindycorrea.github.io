@@ -1,34 +1,5 @@
-@media only screen and (max-width: 850px) {
-    body {
-        font-size: 1em;
-    }
+@media only screen and (min-width: 600px) {
+  main {
 
-    header img {
-        display: block;
-        width: 50px;
-        margin: 0 auto;
-        padding: .8em;
-    }
-
-    #menu {
-        display: grid;
-        padding: .2em;
-
-    }
-
-    #menu span {
-        padding: .2em;
-    }
-
-    tr,
-    td,
-    th {
-        padding: .2em;
-    }
-
-
-    #footer {
-        font-size: .6em;
-    }
-
+  }
 }

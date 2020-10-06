@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1000px) {
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width 100%;
+        margin: auto;
+    }
+}
