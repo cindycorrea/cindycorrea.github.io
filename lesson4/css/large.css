@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1000px) {
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    header img {
+        height: 128px;
+        padding: .3em;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .navigation li {
+        display: inline-block;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75em;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+}

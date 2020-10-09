@@ -1,0 +1,27 @@
+@media only screen and (min-width: 760px) {
+    main {
+        max-width: 600px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .heading h1 {
+        font-size: 3.5em;
+    }
+
+    .heading p {
+        font-size: 1.5em;
+    }
+
+    nav {
+        font-size: 1.2em;
+    }
+
+    header img {
+        height: 100px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
