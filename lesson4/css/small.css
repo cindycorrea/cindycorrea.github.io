@@ -74,6 +74,9 @@ nav {
     font-weight: 700;
 }
 
+.navigation a:link {
+    color: #465c69;
+}
 .navigation a:active {
     color: #465c69;
 }
