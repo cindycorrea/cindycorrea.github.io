@@ -6,11 +6,11 @@ body {
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    margin: 0;
+    margin: 0
 }
 
 main {
-    padding: .2em;
+    padding: .5em;
 }
 
 h1 {
@@ -51,6 +51,17 @@ header img {
 
 nav {
     background-color: #C2DFFF;
+    position: sticky;
+    top: 0;
+
+}
+
+#pancakes {
+    font-size: 1em;
+    background-color: #eab934;
+    font-weight: 900;
+    text-align: center;
+    padding: .5em;
 }
 
 .navigation {
@@ -91,8 +102,39 @@ nav {
     background-color: #465c69;
 }
 
+.active {
+    border: 3px dashed #eab934;
+}
+
 .responsive li {
     display: block;
+}
+
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+}
+
+.weatherupdate {
+    position: absolute;
+    padding: 5px;
+    top: 1em;
+    color: #465c69;
+    left: 2.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
+    background-color: #C2DFFF;
+}
+
+.weatherupdate th {
+    text-align: left;
+    padding: 5px;
+}
+
+.weatherupdate td {
+    text-align: right;
 }
 
 .example {
@@ -103,6 +145,75 @@ nav {
     margin: .5em;
     text-align: center;
 }
+
+#forecast {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#forecast img {
+    width: 70px;
+    margin: 10px 0;
+}
+
+.title {
+    width: 100%;
+    background-color: #C2DFFF;
+}
+
+.box {
+    color: #465c69;
+    display: block;
+    margin: 30px 10px;
+    border: 2px dashed #465c69;
+    padding: 10px;
+}
+
+.box span {
+    display: block;
+    font-size: 1.5em;
+    background-color: #f2f4ff;
+}
+
+article img {
+    display: block;
+    width: 40%;
+    border-radius: 10px;;
+    margin: auto;
+}
+hr {
+    border: 2px solid #eab934;
+    border-radius: 4px;
+}
+
+.contactinfo {
+}
+
+.contactinfo img {
+    display: none;
+}
+.details {
+    font-size: .5em
+    padding: 2em;
+    margin: 1em;
+
+}
+
+.details a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+.details a:link {
+    color: #465c69;
+}
+.details a:visited {
+    color: #465c69;
+}
+.details a:hover {
+    color: #eab934;;
+}
+
 
 footer {
     font-weight: 700;
