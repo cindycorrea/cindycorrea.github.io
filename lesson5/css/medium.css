@@ -21,6 +21,9 @@
         font-size: 1.2em;
     }
 
+    .weatherupdate {
+        font-size: 1em;
+    }
     .article img {
         float: left;
         margin: 20px;
@@ -28,6 +31,14 @@
 
     .article h3 {
         display: inline-block;
+    }
+
+    #forecast {
+        font-size: 1em;
+    }
+    #forecast img {
+        width: 40px;
+        margin: 10px -15px;
     }
 
     .contactinfo {

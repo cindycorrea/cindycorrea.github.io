@@ -112,6 +112,7 @@ nav {
 
 .container {
     position: relative;
+    z-index: -1;
 }
 
 .container img {
@@ -119,6 +120,7 @@ nav {
 }
 
 .weatherupdate {
+    font-size: .5em;
     position: absolute;
     padding: 5px;
     top: 1em;
@@ -147,14 +149,18 @@ nav {
 }
 
 #forecast {
+    font-size: .5em;
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
 #forecast img {
-    width: 70px;
-    margin: 10px 0;
+    width: 25px;
+    margin: 10px -15px;
+    border: .5px solid #465c69;
+    border-radius: 5px;
+
 }
 
 .title {
@@ -165,7 +171,7 @@ nav {
 .box {
     color: #465c69;
     display: block;
-    margin: 30px 10px;
+    margin: 30px 5px;
     border: 2px dashed #465c69;
     padding: 10px;
 }
@@ -188,6 +194,7 @@ hr {
 }
 
 .contactinfo {
+   text-align: center;
 }
 
 .contactinfo img {
