@@ -150,7 +150,7 @@ nav {
 
 #forecast {
     font-size: .5em;
-    display: flex;
+    display: none;
     text-align: center;
     justify-content: center;
 }
@@ -201,10 +201,9 @@ hr {
     display: none;
 }
 .details {
-    font-size: .5em
+    font-size: .5em;
     padding: 2em;
     margin: 1em;
-
 }
 
 .details a {

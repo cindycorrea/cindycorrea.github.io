@@ -35,6 +35,7 @@
 
     #forecast {
         font-size: 1em;
+        display: flex;
     }
     #forecast img {
         width: 40px;
