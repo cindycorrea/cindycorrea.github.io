@@ -112,6 +112,8 @@ nav {
 
 .container {
     position: relative;
+    margin: 0;
+    padding: 0;
     z-index: -1;
 }
 
@@ -123,9 +125,9 @@ nav {
     font-size: .5em;
     position: absolute;
     padding: 5px;
-    top: 1em;
+    top: .2em;
     color: #465c69;
-    left: 2.5em;
+    left: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
     background-color: #C2DFFF;
 }
@@ -185,50 +187,44 @@ nav {
 article img {
     display: block;
     width: 40%;
-    border-radius: 10px;;
-    margin: auto;
+    border-radius: 10px;
+    margin: 2em auto 1em auto;
 }
+
 hr {
     border: 2px solid #eab934;
     border-radius: 4px;
 }
 
-
-
-
-
-
 .contactinfo {
-   text-align: center;
+    text-align: center;
 }
 
 .contactinfo img {
     display: none;
 }
+
 .details {
-    font-size: .5em;
-    padding: 2em;
-    margin: 1em;
+    font-size: 1em;
 }
 
 .details a {
     text-decoration: none;
     margin-right: 10px;
 }
+
 .details a:link {
     color: #465c69;
 }
+
 .details a:visited {
     color: #465c69;
 }
+
 .details a:hover {
-    color: #eab934;;
+    color: #eab934;
+    ;
 }
-
-
-
-
-
 
 footer {
     font-weight: 700;
