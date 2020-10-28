@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1000px) {
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    header img {
+        height: 128px;
+        padding: .3em;
+    }
+
+    #pancakes {
+        font-size: 1.5em;
+    }
+
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .navigation li {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75em;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .lazyload {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .contactinfo {
+        margin-bottom: 2em;
+    }
+
+    .contactinfo img {
+        display: block;
+        height: 250px;
+        float: left;
+        margin: 1em 0 0 2em;
+    }
+
+}

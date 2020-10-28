@@ -1,0 +1,56 @@
+@media only screen and (min-width: 760px) {
+    main {
+        max-width: 760px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    header img {
+        height: 100px;
+    }
+
+    .heading h1 {
+        font-size: 3.5em;
+    }
+
+
+    .heading p {
+        font-size: 1.5em;
+    }
+
+    #pancakes {
+        font-size: 1.3em;
+    }
+
+    nav {
+        font-size: 1.2em;
+    }
+
+    .lazyload {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .card {
+        max-width: 350px;
+    }
+
+
+    .contactinfo img {
+        display: block;
+        float: left;
+        margin: 1em;
+    }
+
+    .details {
+        float: right;
+        text-align: left;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
