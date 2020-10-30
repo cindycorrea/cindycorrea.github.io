@@ -38,6 +38,10 @@
         font-weight: 700;
     }
 
+    .lazyload {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
     .contactinfo {
         margin-bottom: 2em;

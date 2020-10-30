@@ -26,6 +26,10 @@
         font-size: 1.2em;
     }
 
+    .lazyload {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
     .card {
         max-width: 350px;
     }
