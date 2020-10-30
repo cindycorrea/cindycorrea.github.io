@@ -38,10 +38,16 @@
         font-weight: 700;
     }
 
+    .description {
+        display: inline;
+        margin-left: .4em;
+    }
     .lazyload {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    section img {
+        padding-bottom: .5em;
+    }
 
     .contactinfo {
         margin-bottom: 2em;
