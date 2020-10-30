@@ -43,7 +43,8 @@
         margin-left: .4em;
     }
     .lazyload {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: repeat(3, 355px);
     }
     section img {
         padding-bottom: .5em;

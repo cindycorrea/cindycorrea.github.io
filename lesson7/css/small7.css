@@ -116,8 +116,9 @@ nav {
 
 .lazyload {
     display: grid;
-    grid-template-columns: repeat(1, 400px);
-    grid-gap: 1em;
+    grid-template-columns: 300px;
+    grid-gap: 2em;
+
     margin-bottom: 2em;
 }
 
