@@ -9,6 +9,9 @@ data rows: #e7ffed
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 4em;
 }
 
 table {
