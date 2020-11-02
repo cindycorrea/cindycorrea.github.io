@@ -11,7 +11,7 @@ body {
     font-size: 30px;
     max-width: 600px;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 table {
@@ -25,7 +25,6 @@ thead th {
     background-color: #7fb9c2;
     color: black;
     padding: .5em;
-    width: auto;
     font-size: 50px;
 }
 
