@@ -110,28 +110,85 @@ nav {
     display: block;
 }
 
-.description {
-    display: none;
+.container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
 }
 
-.lazyload {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-gap: 2em;
-    margin-bottom: 2em;
+.container img {
+    width: 100%;
 }
 
-.card {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .15);
+.weatherupdate {
+    font-size: .5em;
+    position: absolute;
+    padding: 5px;
+    top: .2em;
+    color: #465c69;
+    left: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
+    background-color: #C2DFFF;
 }
 
-.card img {
+.weatherupdate th {
+    text-align: left;
+    padding: 5px;
+}
+
+.weatherupdate td {
+    text-align: right;
+}
+
+.example {
     display: block;
-    margin: auto;
+    border: .2em dotted #eab934;
+    font-weight: 700;
+    padding: .5em;
+    margin: .5em;
+    text-align: center;
 }
 
-.caption {
-    padding: 1em;
+#forecast {
+    font-size: .5em;
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#forecast img {
+    width: 25px;
+    margin: 10px -15px;
+    border: .5px solid #465c69;
+    border-radius: 5px;
+
+}
+
+.title {
+    width: 100%;
+    background-color: #C2DFFF;
+}
+
+.box {
+    color: #465c69;
+    display: block;
+    margin: 30px 5px;
+    border: 2px dashed #465c69;
+    padding: 10px;
+}
+
+.box span {
+    display: block;
+    font-size: 1.5em;
+    background-color: #f2f4ff;
+}
+
+article img {
+    display: block;
+    width: 40%;
+    border-radius: 10px;
+    margin: 2em auto 1em auto;
 }
 
 hr {
@@ -166,6 +223,35 @@ hr {
 
 .details a:hover {
     color: #eab934;
+}
+
+.description {
+    display: none;
+}
+
+.lazyload {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 2em;
+    margin-bottom: 2em;
+}
+
+.card {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .15);
+}
+
+.card img {
+    display: block;
+    margin: auto;
+}
+
+.caption {
+    padding: 1em;
+}
+
+hr {
+    border: 2px solid #eab934;
+    border-radius: 4px;
 }
 
 footer {

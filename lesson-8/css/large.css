@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1000px) {
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    header img {
+        height: 128px;
+        padding: .3em;
+    }
+
+    #pancakes {
+        font-size: 1.5em;
+    }
+    .description {
+        display: inline;
+        margin-left: .4em;
+    }
+    .lazyload {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: repeat(3, 355px);
+    }
+    .card:hover {
+        box-shadow: 10px 18px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    nav {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .navigation li {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75em;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .contactinfo {
+        margin-bottom: 2em;
+    }
+
+    .contactinfo img {
+        display: block;
+        height: 250px;
+        float: left;
+        margin-right: 3em;
+    }
+
+}
