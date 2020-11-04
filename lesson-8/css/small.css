@@ -249,6 +249,55 @@ hr {
     padding: 1em;
 }
 
+
+
+label {
+    display: block;
+    padding: 1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    display: block;
+    margin-top: .2em;
+    padding: .5em;
+}
+
+.onside {
+    display: inline-flex;
+}
+
+select {
+    -webkit-appearance: none;
+    margin: .3em;
+    padding: .5em;
+    color: #465c69;
+}
+
+input[type=radio] {
+    margin-right: .5em;
+    transform: scale(1.5);
+}
+.danger {
+    margin: 0;
+}
+
+.submitButton {
+    border: none;
+    background-color: #465c69;
+    color: white;
+    border-radius: .75rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    margin-top: .75em;
+}
+
 hr {
     border: 2px solid #eab934;
     border-radius: 4px;
