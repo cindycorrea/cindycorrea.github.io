@@ -43,7 +43,7 @@
         <label>Phone*: <input type="tel" name="phone" required></label>
         <label>Zip Code: <input type="number" name="zipcode" required></label>
         <label>Storm Date: <input type="date" name="stormdate"></label>
-        <label for="stormtypes">Storm Type:<input name="typeofstorm" list="typeofstorm"></label>
+        <label>Storm Type:<input name="typeofstorm" list="typeofstorm"></label>
 
         <datalist id="typeofstorm">
             <option value="Flash Flood">
@@ -53,12 +53,12 @@
             <option value="Tornado">
         </datalist>
 
-        <label class="rate" for="rating" name="rating">Storm Severity:
-            <input type="range" id="rating" value="0" min="0" max="10" list="tickmarks"
+        <label class="rate" for="rating">Storm Severity:
+            <input type="range" id="rating" value="0" min="0" max="10"
                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <span id="ratingvalue">0</span>
         </label>
-        <label name="StormType">Storm Type: 
+        <label>Storm Type: 
             <select>
                 <option value="" selected="true" disabled="disabled">Select Region &darr;</option>
                 <option value="Preston">Preston</option>
@@ -66,12 +66,12 @@
                 <option value="FishHaven">Fish Haven</option>
             </select>
         </label>
-        <label class="danger" name="danger">Are you in danger?</label>
+        <label class="danger">Are you in danger?</label>
         <label class="onside"><input type="radio" name="choice" value="yes">Yes</label>
         <label class="onside"><input type="radio" name="choice" value="no"> No</label>
         <label class="onside"><input type="radio" name="choice" value="maybe"> Maybe</label>
 
-        <label>Additional Information: <input type="textarea" name="addinfo"></label>
+        <label>Additional Information:<textarea name="addinfo"></textarea></label>
 
         <input type="submit" value="Save Me" name="Saveme" class="submitButton">
     </form>

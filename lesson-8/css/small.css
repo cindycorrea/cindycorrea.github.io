@@ -249,8 +249,6 @@ hr {
     padding: 1em;
 }
 
-
-
 label {
     display: block;
     padding: 1em;
@@ -261,7 +259,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-input {
+input, textarea {
     display: block;
     margin-top: .2em;
     padding: .5em;
