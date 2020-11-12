@@ -137,7 +137,7 @@ nav {
 }
 
 .towns img {
-    width: 100px;
+    width: 300px;
 }
 
 
@@ -232,13 +232,6 @@ hr {
     border-radius: 4px;
 }
 
-.contactinfo {
-    text-align: center;
-}
-
-.contactinfo img {
-    display: none;
-}
 
 .details {
     font-size: 1em;
@@ -300,6 +293,7 @@ textarea {
     display: block;
     margin-top: .2em;
     padding: .5em;
+    font-size: 1em;
 }
 
 .onside {
@@ -311,6 +305,7 @@ select {
     margin: .3em;
     padding: .5em;
     color: #465c69;
+    font-size: 1em;
 }
 
 input[type=radio] {
@@ -337,6 +332,14 @@ input[type=radio] {
 hr {
     border: 2px solid #eab934;
     border-radius: 4px;
+}
+
+.contactinfo {
+    text-align: center;
+}
+
+.contactinfo img {
+    display: none;
 }
 
 footer {

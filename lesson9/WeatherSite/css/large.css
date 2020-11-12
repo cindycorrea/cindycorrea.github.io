@@ -56,14 +56,14 @@
     }
 
     .contactinfo {
-        margin-bottom: 2em;
+        margin: 0 6em 2em 0;
     }
 
     .contactinfo img {
         display: block;
         height: 250px;
         float: left;
-        margin-right: 3em;
+        margin-left: 6em;
     }
 
 }
