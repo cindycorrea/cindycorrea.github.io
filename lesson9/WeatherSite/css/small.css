@@ -53,7 +53,6 @@ nav {
     background-color: #C2DFFF;
     position: sticky;
     top: 0;
-
 }
 
 #pancakes {
@@ -109,6 +108,43 @@ nav {
 .responsive li {
     display: block;
 }
+
+
+
+
+
+
+.events {
+    border: 2px solid black;
+    padding: 2em;
+    margin: 2em;
+    padding-top: 1em;
+}
+
+
+
+.towns {
+    display: grid;
+    grid-gap: 2em;
+    color: #465c69;
+}
+
+.towns section {
+    background-color: #C2DFFF;
+    border: 3px solid #eab934;
+    text-align: center;
+    padding: 1em;
+}
+
+.towns img {
+    width: 100px;
+}
+
+
+
+
+
+
 
 .container {
     position: relative;
@@ -259,7 +295,8 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-input, textarea {
+input,
+textarea {
     display: block;
     margin-top: .2em;
     padding: .5em;
@@ -280,6 +317,7 @@ input[type=radio] {
     margin-right: .5em;
     transform: scale(1.5);
 }
+
 .danger {
     margin: 0;
 }
