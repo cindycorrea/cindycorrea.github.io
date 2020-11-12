@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Crete+Round&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-size: 3em;
+    border: 4px solid rgb(78, 128, 66);
+    max-width: 500px;
+    padding: .2em;
+    margin: auto;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Crete Round', serif;
+    font-size: 2em;
+    color: rgb(234, 233, 247);
+}
+
+section {
+    color: rgb(234, 233, 247);
+    background-color: rgb(78, 128, 66);
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    font-family: 'Cabin', sans-serif;
+}
+
+.cards {
+    padding: 2em;
+    display: grid;
+    grid-gap: 2em;
+}
+
+section img {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    width: 200px
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (min-width: 760px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
