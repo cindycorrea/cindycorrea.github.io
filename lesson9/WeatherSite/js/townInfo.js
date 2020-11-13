@@ -17,10 +17,8 @@ fetch(requestURL)
                 let pop = document.createElement('p');
                 let rain = document.createElement('p');
                 let photo = document.createElement('img');
-
                 h3.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
-                founded.textContent = "Year Founded: " + towns[i].yearFounded;
                 pop.textContent = "Current Population: " + towns[i].currentPopulation;
                 rain.textContent = "Average Rainfall: " + towns[i].averageRainfall + "\"";
                 photo.setAttribute('src', './images/' + towns[i].photo);
