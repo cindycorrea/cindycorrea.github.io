@@ -55,6 +55,17 @@
         font-weight: 700;
     }
 
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+    }
+    section div {
+        float: none;
+    }
+    section:nth-child(even) div{
+        float: none;
+    }
+
     .contactinfo {
         margin: 0 6em 2em 0;
     }

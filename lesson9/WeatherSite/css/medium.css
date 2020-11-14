@@ -35,8 +35,21 @@
     }
 
     .towns {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: 0;
+    }
+
+    .towns section {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    section div {
+        float: left;
+    }
+
+    section:nth-child(even) div {
+        float: right;
     }
 
     #forecast {

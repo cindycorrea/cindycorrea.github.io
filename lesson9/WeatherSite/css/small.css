@@ -48,7 +48,10 @@ header img {
     height: 50px;
     padding: .3em;
 }
+
 .homehero {
+    display: block;
+    width: 100%;
 }
 
 nav {
@@ -112,31 +115,37 @@ nav {
 }
 
 .events {
-    border: 2px solid black;
+    border: 3px dashed #465c69;
+    color: #465c69;
     padding: 2em;
     margin: 2em;
     padding-top: 1em;
 }
+
+
 
 .towns {
     color: #465c69;
     font-size: .8em;
     margin: 4em;
     display: grid;
-        grid-gap: 2em;
+    grid-gap: 2em;
 }
 
 .towns section {
     background-color: #C2DFFF;
     border: 3px solid #eab934;
     text-align: center;
-    padding: .5em;
+    padding: 1em;
+    margin: auto;
 }
 
 .towns img {
     width: 200px;
     padding: 0;
 }
+
+
 
 .container {
     position: relative;
