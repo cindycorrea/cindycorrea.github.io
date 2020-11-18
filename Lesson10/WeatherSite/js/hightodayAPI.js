@@ -20,7 +20,7 @@ function kelvinToF(kelvin) {
     return ((kelvin - 273.15) * 1.8 + 32).toFixed(0);
 }
 
-function windChill(temp, wind) {
+function windChill() {
     var temp = parseFloat(document.getElementById("current").innerHTML);
     var wind = parseFloat(document.getElementById("wind").innerHTML);
     if (temp <= 50 && wind >= 3) {
