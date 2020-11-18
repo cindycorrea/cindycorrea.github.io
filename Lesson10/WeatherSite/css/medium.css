@@ -1,0 +1,88 @@
+@media only screen and (min-width: 760px) {
+    main {
+        max-width: 600px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .heading h1 {
+        font-size: 3.5em;
+    }
+
+    .heading p {
+        font-size: 1.5em;
+    }
+
+    #pancakes {
+        font-size: 1.3em;
+    }
+
+    nav {
+        font-size: 1.2em;
+    }
+
+    .weatherupdate {
+        font-size: 1em;
+    }
+
+    .article img {
+        float: left;
+        margin: 20px;
+    }
+
+    .article h3 {
+        display: inline-block;
+    }
+
+    .towns {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .towns section {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    section div {
+        float: left;
+    }
+
+    section:nth-child(even) div {
+        float: right;
+    }
+
+    #forecast {
+        font-size: 1em;
+        display: flex;
+    }
+
+    #forecast img {
+        width: 40px;
+        margin: 10px -15px;
+    }
+
+    .lazyload {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactinfo {
+        margin-bottom: 2em;
+        text-align: right;
+    }
+
+    .contactinfo img {
+        display: block;
+        height: 200px;
+        float: left;
+        margin-right: 3em;
+    }
+
+    header img {
+        height: 100px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@800&family=Raleway:wght@400;700&display=swap');
+
+body {
+    color: #465c69;
+    background-color: #f2f4ff;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0
+}
+
+main {
+    padding: .5em;
+}
+
+h1 {
+    font-family: 'Life Savers', cursive;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #465c69;
+    color: #f2f4ff;
+    padding: 1em;
+    border-top: .3em solid #C2DFFF;
+    border-bottom: .3em solid #C2DFFF;
+}
+
+.heading h1 {
+    font-size: 1.5em;
+    display: inline;
+}
+
+.heading p {
+    margin: 0;
+    font-size: .7em;
+    font-weight: 700;
+}
+
+header img {
+    height: 50px;
+    padding: .3em;
+}
+
+.homehero {
+    display: block;
+    width: 100%;
+}
+
+nav {
+    background-color: #C2DFFF;
+    position: sticky;
+    top: 0;
+}
+
+#pancakes {
+    font-size: 1em;
+    background-color: #eab934;
+    font-weight: 900;
+    text-align: center;
+    padding: .5em;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation a:link {
+    color: #465c69;
+}
+
+.navigation a:active {
+    color: #465c69;
+}
+
+.navigation a:visited {
+    color: #465c69;
+}
+
+.navigation a:hover {
+    color: #f2f4ff;
+    background-color: #465c69;
+}
+
+.active {
+    border: 3px dashed #eab934;
+}
+
+.responsive li {
+    display: block;
+}
+
+.events {
+    border: 3px dashed #465c69;
+    color: #465c69;
+    padding: 2em;
+    margin: 2em;
+    padding-top: 1em;
+}
+
+
+
+.towns {
+    color: #465c69;
+    font-size: .8em;
+    margin: 4em;
+    display: grid;
+    grid-gap: 2em;
+}
+
+.towns section {
+    background-color: #C2DFFF;
+    border: 3px solid #eab934;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+.towns img {
+    width: 200px;
+    padding: 0;
+}
+
+
+
+.container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.container img {
+    width: 100%;
+}
+
+.weatherupdate {
+    font-size: .5em;
+    position: absolute;
+    padding: 5px;
+    top: .2em;
+    color: #465c69;
+    left: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
+    background-color: #C2DFFF;
+}
+
+.weatherupdate th {
+    text-align: left;
+    padding: 5px;
+}
+
+.weatherupdate td {
+    text-align: right;
+}
+
+.example {
+    display: block;
+    border: .2em dotted #eab934;
+    font-weight: 700;
+    padding: .5em;
+    margin: .5em;
+    text-align: center;
+}
+
+#forecast {
+    font-size: .5em;
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+
+#forecast img {
+    width: 25px;
+    margin: 10px -15px;
+    border: .5px solid #465c69;
+    border-radius: 5px;
+
+}
+
+.title {
+    width: 100%;
+    background-color: #C2DFFF;
+}
+
+.box {
+    color: #465c69;
+    display: block;
+    margin: 30px 5px;
+    border: 2px dashed #465c69;
+    padding: 10px;
+}
+
+.box span {
+    display: block;
+    font-size: 1.5em;
+    background-color: #f2f4ff;
+}
+
+article img {
+    display: block;
+    width: 40%;
+    border-radius: 10px;
+    margin: 2em auto 1em auto;
+}
+
+hr {
+    border: 2px solid #eab934;
+    border-radius: 4px;
+}
+
+
+.details {
+    font-size: 1em;
+}
+
+.details a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.details a:link {
+    color: #465c69;
+}
+
+.details a:visited {
+    color: #465c69;
+}
+
+.details a:hover {
+    color: #eab934;
+}
+
+.description {
+    display: none;
+}
+
+.lazyload {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 2em;
+    margin-bottom: 2em;
+}
+
+.card {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .15);
+}
+
+.card img {
+    display: block;
+    margin: auto;
+}
+
+.caption {
+    padding: 1em;
+}
+
+label {
+    display: block;
+    padding: 1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input,
+textarea {
+    display: block;
+    margin-top: .2em;
+    padding: .5em;
+    font-size: 1em;
+}
+
+.onside {
+    display: inline-flex;
+}
+
+select {
+    -webkit-appearance: none;
+    margin: .3em;
+    padding: .5em;
+    color: #465c69;
+    font-size: 1em;
+}
+
+input[type=radio] {
+    margin-right: .5em;
+    transform: scale(1.5);
+}
+
+.danger {
+    margin: 0;
+}
+
+.submitButton {
+    border: none;
+    background-color: #465c69;
+    color: white;
+    border-radius: .75rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    margin-top: .75em;
+}
+
+hr {
+    border: 2px solid #eab934;
+    border-radius: 4px;
+}
+
+.contactinfo {
+    text-align: center;
+}
+
+.contactinfo img {
+    display: none;
+}
+
+footer {
+    font-weight: 700;
+    width: 100%;
+    padding: .5em;
+    background-color: #C2DFFF;
+    text-align: center;
+    border-top: .2em solid #eab934;
+    border-bottom: .2em solid #eab934;
+    font-size: .8em;
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+footer a:visited {
+    color: #465c69;
+}
+
+footer a:link {
+    color: #465c69;
+}
+
+footer a:hover {
+    color: #f2f4ff;
+}

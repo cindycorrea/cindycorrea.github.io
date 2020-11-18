@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cindy Correa">
+    <meta name="description" content="A website for weather updates in Preston, ID">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../myimages/favicon.ico" type="image/x-icon">
+    <title>High Today</title>
+</head>
+
+<body>
+    <div id="pancakes"></div>
+    <header>
+        <a href="./highToday.html"><img src="./images/newLogo.png" alt="Active High Logo">
+        <section class="heading"></a>
+            <h1>High Today</h1>
+            <p>We keep you outside and happy!</p>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="compress">&#9776; Menu</a></li>
+            <li><a href="./highToday.html">Home</a></li>
+            <li class="active"><a href="./preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <hr>
+        <div class="container">
+            <img src="./images/MyHero1100.JPG" alt="City of Preston, ID" sizes="50vw"
+            srcset="./images/MyHero800.JPG 800w,
+            ./images/MyHero500.JPG 500w,./images/MyHero200.JPG 200w">
+
+            <section class="weatherupdate">
+                <h4>Weather Summary</h4>
+                <table>
+                    <tr>
+                        <th>Currently:</th>
+                        <td id="current"></td>
+                    </tr>
+                    <tr>
+                        <th>High:</th>
+                        <td id="high"></td>
+                    </tr>
+                    <tr>
+                        <th>Low:</th>
+                        <td id="low"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <td id="wind"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="answer"></td>
+                    </tr>
+
+                </table>
+            </section>
+        </div>
+        <aside id="forecast">
+            <div class="box">
+                <span class="title">Mon</span>
+                <img src="images/sunny.png" alt="sunny">
+                <span>78&#730;F</span>
+            </div>
+            <div class="box">
+                <span class="title">Tue</span>
+                <img src="images/partycloudy.png" alt="party cloudy">
+                <span>66&#730;F</span>
+            </div>
+            <div class="box">
+                <span class="title">Wed</span>
+                <img src="images/Rain.png" alt="rainy day">
+                <span>54&#730;F</span>
+            </div>
+            <div class="box">
+                <span class="title">Thur</span>
+                <img src="images/partycloudy.png" alt="party cloudy">
+                <span>78&#730;F</span>
+            </div>
+            <div class="box">
+                <span class="title">Fri</span>
+                <img src="images/sunny.png" alt="sunny">
+                <span>88&#730;F</span>
+            </div>
+        </aside>
+        <article class="article">
+            <img src="./images/Chloe.jpeg" alt="Preston Resident">
+            <h3>Molestias Magnam</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias magnam possimus ipsam sed incidunt.
+                Ducimus id, in alias perspiciatis sapiente quam praesentium deserunt laudantium impedit mollitia!
+                Sapiente blanditiis nobis, laboriosam amet recusandae temporibus! Ab mollitia quidem impedit esse
+                minima, rem ea eveniet cupiditate quia rerum assumenda nam inventore, excepturi, sapiente odit
+                aspernatur. Ipsa corrupti fugit quas, corporis quo, nisi perferendis reprehenderit commodi distinctio
+                odit magni sapiente repellat dolorem laborum in! Earum ipsam corrupti blanditiis dolorum itaque unde,
+                quidem illo sequi dolores nulla aperiam quia veniam, aliquid nam culpa recusandae quod cumque incidunt!
+                Qui, sint! Commodi reiciendis repellat suscipit nostrum at officia amet rerum cupiditate neque mollitia.
+                Laboriosam nulla nostrum provident culpa illo voluptas sapiente beatae, neque nemo libero quisquam iusto
+                ea consectetur, modi eaque reprehenderit voluptatum ipsum esse ad earum rem voluptates doloribus!
+                Architecto corrupti quidem autem beatae ratione at placeat iste fugit laudantium illum tempore sequi
+                iure in enim accusantium, quibusdam dolor velit non aliquid repudiandae dolore quasi eaque! Corporis
+                debitis itaque dicta doloribus nulla, rem aspernatur libero saepe harum, animi modi ipsam, similique
+                fugiat error numquam alias adipisci dolorum aut quibusdam distinctio nisi suscipit obcaecati quis. Cum
+                aspernatur exercitationem amet provident consectetur earum architecto iure deleniti vitae corporis!</p>
+        </article>
+        <hr>
+        <div class="contactinfo clearfix">
+            <img src="./images/mapofidaho.png" alt="Map of SE Idaho">
+            <div class="details">
+                <h3>Contact Us</h3>
+                <span>2006 Cinebar St.<br>Soda Springs, ID 83346<br>&#9993; weather@email.net<br>&#9742;
+                    208•375•1993</span><br>
+                <span><a href="http://facebook.com" target="blank">Facebook</a></span>
+                <span><a href="http://instagram.com" target="blank">Instagram</a></span>
+                <span><a href="http://twitter.com" target="blank">Twitter</a></span>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; High Today | Cindy Correa<br><span id="currentdate"></span>
+    </footer>
+  
+    <script src="js/weather7.js"></script>
+    <script src="./js/hightodayAPI.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webFontLoad.js"></script>
+</body>
+
+</html>
