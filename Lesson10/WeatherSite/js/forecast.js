@@ -4,11 +4,9 @@ const weatherAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&
 fetch(weatherAPI)
     .then(response => response.json())
     .then(jsObject => {
-        console.log(jsObject);
-
+        //console.log(jsObject);
         const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(forecast);
-
+        //console.log(forecast);
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
         for (let day = 0; day < forecast.length; day++) {
@@ -23,7 +21,7 @@ fetch(weatherAPI)
             icon.setAttribute('src', 'http://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '.png');
             icon.setAttribute('alt', forecast[day].weather[0].description);
             conditions.textContent = (forecast[day].main.temp).toFixed(0) + "\u00B0F";
-            
+
             card.appendChild(dayName);
             card.appendChild(icon);
             card.appendChild(conditions);

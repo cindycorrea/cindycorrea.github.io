@@ -3,17 +3,11 @@ const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appi
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         document.getElementById('conditions').textContent = jsObject.list[0].weather[0].main;
         document.getElementById('current').textContent = kelvinToF(jsObject.list[0].main.temp) + "\u00B0F";
         document.getElementById('wind').textContent = (jsObject.list[0].wind.speed).toFixed(0) + " mph";
         document.getElementById('answer').textContent = windChill();
-        //const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.list[0].weather[0].icon + '.png';
-        //const desc = jsObject.list[0].weather.description;
-        //document.getElementById('imagesrc').textContent = imagesrc;
-        //document.getElementById('icon').setAttribute('src', imagesrc);
-        //document.getElementById('icon').setAttribute('alt', desc);
-
     });
 
 function kelvinToF(kelvin) {
