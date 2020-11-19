@@ -3,9 +3,8 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+        document.getElementById('conditions').textContent = jsObject.list[0].weather[0].main;
         document.getElementById('current').textContent = kelvinToF(jsObject.list[0].main.temp) + "\u00B0F";
-        document.getElementById('high').textContent = kelvinToF(jsObject.list[0].main.temp_max) + "\u00B0F";
-        document.getElementById('low').textContent = kelvinToF(jsObject.list[0].main.temp_min) + "\u00B0F";
         document.getElementById('wind').textContent = (jsObject.list[0].wind.speed).toFixed(0) + " mph";
         document.getElementById('answer').textContent = windChill();
         //const imagesrc = 'http://openweathermap.org/img/wn/' + jsObject.list[0].weather[0].icon + '.png';

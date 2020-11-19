@@ -187,27 +187,27 @@ nav {
     text-align: center;
 }
 
-#forecast {
+.forecast {
     font-size: .5em;
     display: none;
     text-align: center;
     justify-content: center;
 }
 
-#forecast img {
+.forecast img {
     width: 25px;
     margin: 10px -15px;
     border: .5px solid #465c69;
     border-radius: 5px;
-
+    background-color: black;
 }
 
-.title {
+.forecast span {
     width: 100%;
     background-color: #C2DFFF;
 }
 
-.box {
+.forecast div {
     color: #465c69;
     display: block;
     margin: 30px 5px;
@@ -215,7 +215,7 @@ nav {
     padding: 10px;
 }
 
-.box span {
+.forecast span {
     display: block;
     font-size: 1.5em;
     background-color: #f2f4ff;
