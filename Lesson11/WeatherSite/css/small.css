@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    padding: .5em;
+    padding: 2em;
 }
 
 h1 {
@@ -162,8 +162,6 @@ ol li a:hover {
     color: #eab934;
 }
 
-
-
 .textbox {
     margin: 1em auto;
     padding: 1.5em;
@@ -173,10 +171,6 @@ ol li a:hover {
     width: 50%;
     text-align: center;
     border: 5px solid #96c5f7;
-}
-
-table {
-    width: 75%;
 }
 
 tr,
@@ -222,7 +216,6 @@ th {
 }
 
 .weatherupdate {
-    font-size: .5em;
     position: absolute;
     padding: 5px;
     top: .2em;
@@ -230,7 +223,6 @@ th {
     left: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
     background-color: #C2DFFF;
-
 }
 
 .weatherupdate table th {
