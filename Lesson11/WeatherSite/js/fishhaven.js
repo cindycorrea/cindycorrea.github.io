@@ -28,6 +28,7 @@ fetch(weatherAPI)
             document.querySelector('div.forecast').appendChild(card);
             document.getElementById('conditions').textContent = jsObject.list[0].weather[0].main;
             document.getElementById('current').textContent = (jsObject.list[0].main.temp).toFixed(0) + "\u00B0F";
+            document.getElementById('humidity').textContent = jsObject.list[0].main.humidity + "%";
             document.getElementById('wind').textContent = (jsObject.list[0].wind.speed).toFixed(0) + " mph";
             document.getElementById('answer').textContent = windChill();
         }
