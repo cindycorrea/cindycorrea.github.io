@@ -1,0 +1,80 @@
+@media only screen and (min-width: 1000px) {
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+        font-size: 25px;
+    }
+
+    header img {
+        height: 128px;
+        padding: .3em;
+    }
+
+    #pancakes {
+        font-size: 1.5em;
+    }
+
+    .description {
+        display: inline;
+        margin-left: .4em;
+    }
+
+    .lazyload {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: repeat(3, 355px);
+    }
+
+    .card:hover {
+        box-shadow: 10px 18px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .navigation li {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75em;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+    }
+    section div {
+        float: none;
+    }
+    section:nth-child(even) div{
+        float: none;
+    }
+
+    .contactinfo {
+        margin: 0 6em 2em 0;
+    }
+
+    .contactinfo img {
+        display: block;
+        height: 250px;
+        float: left;
+        margin-left: 6em;
+    }
+
+}

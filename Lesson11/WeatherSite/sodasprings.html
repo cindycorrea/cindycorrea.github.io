@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cindy Correa">
+    <meta name="description" content="A website for weather updates in Soda Springs, ID">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../myimages/favicon.ico" type="image/x-icon">
+    <title>Soda Springs Home</title>
+</head>
+
+<body>
+    <div id="pancakes"></div>
+    <header>
+        <a href="./highToday.html"><img src="./images/newLogo.png" alt="Active High Logo">
+            <section class="heading">
+        </a>
+        <h1>High Today</h1>
+        <p>We keep you outside and happy!</p>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="compress">&#9776; Menu</a></li>
+            <li><a href="./highToday.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li class="active"><a href="./sodasprings.html">Soda Springs</a></li>
+            <li><a href="./fishhaven.html">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs, Idaho</h2>
+        <hr>
+        <div class="container">
+            <img src="./images/MyHero1100.JPG" alt="City of Soda Springs, ID" sizes="50vw" srcset="./images/MyHero800.JPG 800w,
+            ./images/MyHero500.JPG 500w,./images/MyHero200.JPG 200w">
+
+            <section class="weatherupdate">
+                <h4>Weather Summary</h4>
+                <table>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td id="conditions"></td>
+                    </tr>
+                    <tr>
+                        <th>Current Temp:</th>
+                        <td id="current"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <td id="wind"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="answer"></td>
+                    </tr>
+
+                </table>
+            </section>
+        </div>
+        <div class="forecast"></div>
+        <article class="article">
+            <img src="./images/Chloe.jpeg" alt="Denver Resident">
+            <h3>I Love Soda Springs!</h3>
+            <p>Chloe Carter, 9-year-old from Denver, recently visited Soda Springs with her family. They visited many of
+                the small towns in the area, including Fish Haven and Preston. "Our family has always wanted to take a
+                trip to Southern Idaho" said Chloe's mom, "We just could never find time before, but boy are we glad we
+                did! This place is beautiful."
+                <br><br>
+                They've spent the last 10 days in the area, getting to know the
+                people, visiting the sites, hiking, and enjoying the local cuisine. "I've never tasted so many different
+                forms
+                of roadkill before!" Chloe's dad said, "It's so interesting to see how these people bring in what they
+                hit with their cars and turn it into something really special and surprisingly edible!"
+                <br><br>
+                Chloe reflects on her visit, "I like coming here to visit. I'm glad that my mom and dad brought us here.
+                I don't want to live her though. I would miss of of my friends. I do want to come back and visit!"
+            </p>
+        </article>
+        <div class="events"></div>
+        <hr>
+        <div class="contactinfo clearfix">
+            <img src="./images/mapofidaho.png" alt="Map of SE Idaho">
+            <div class="details">
+                <h3>Contact Us</h3>
+                <span>2006 Cinebar St.<br>Soda Springs, ID 83346<br>&#9993; weather@email.net<br>&#9742;
+                    208•375•1993</span><br>
+                <span><a href="http://facebook.com" target="blank">Facebook</a></span>
+                <span><a href="http://instagram.com" target="blank">Instagram</a></span>
+                <span><a href="http://twitter.com" target="blank">Twitter</a></span>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; High Today | Cindy Correa<br><span id="currentdate"></span><span> | <a
+                href="https://openweathermap.org/" target="_blank">Weather Data Source</a></span>
+    </footer>
+    <script src="./js/sodasprings.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+</body>
+
+</html>

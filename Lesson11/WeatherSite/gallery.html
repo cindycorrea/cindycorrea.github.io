@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cindy Correa">
+    <meta name="description" content="Weather Gallery">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="shortcut icon" href="../myimages/favicon.ico" type="image/x-icon">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div id="pancakes"></div>
+    <header>
+        <a href="./highToday.html"><img src="./images/newLogo.png" alt="Active High Logo">
+        <section class="heading"></a>
+            <h1>High Today</h1>
+            <p>We keep you outside and happy!</p>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="compress">&#9776; Menu</a></li>
+            <li><a href="./highToday.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="./sodasprings.html">Soda Springs</a></li>
+            <li><a href="./fishhaven.html">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Gallery</h2>
+        <hr>
+        <section class="lazyload">
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/sunset.jpg" alt="Sunset">
+                <div class="description">Sunset</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/aurora.jpg" alt="Frozen reservoir">
+                <div class="description">Frozen Lake</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/fog.JPG" alt="Foggy Day">
+                <div class="description">Foggy Day</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/snapDragon.JPG" alt="Frozen snap dragons">
+                <div class="description">Party Cloudy</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/purpleflowers.jpg" alt="Purple Flowers">
+                <div class="description">Sunny Day</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/moonlight.JPG" alt="Moonlight">
+                <div class="description">Moon Rise</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/palmerlake.jpg" alt="Palmer lake">
+                <div class="description">Sunny Day</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/pikespeak.jpg" alt="Pike's Peak">
+                <div class="description">Windy Day</div>
+            </div>
+            <div class="card clearfix">
+                <img src="images/placeholder.png" data-src="./images/fall.jpg" alt="Fall trail">
+                <div class="description">Sunset</div>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>&copy; High Today | Cindy Correa<br><span id="currentdate"></span>
+    </footer>
+    <script src="./js/lazyload.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webFontLoad.js"></script>
+</body>
+
+</html>

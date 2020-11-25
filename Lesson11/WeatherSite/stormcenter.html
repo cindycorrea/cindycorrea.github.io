@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cindy Correa">
+    <meta name="description" content="A website for weather updates in Preston, ID">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../myimages/favicon.ico" type="image/x-icon">
+    <title>High Today</title>
+</head>
+
+<body>
+    <div id="pancakes"></div>
+    <header>
+        <a href="./highToday.html"><img src="./images/newLogo.png" alt="Active High Logo">
+        <section class="heading"></a>
+            <h1>High Today</h1>
+            <p>We keep you outside and happy!</p>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="compress">&#9776; Menu</a></li>
+            <li><a href="./highToday.html">Home</a></li>
+            <li><a href="./preston.html">Preston</a></li>
+            <li><a href="./sodasprings.html">Soda Springs</a></li>
+            <li><a href="./fishhaven.html">Fish Haven</a></li>
+            <li class="active"><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html ">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Storm Center</h1>
+        <hr>
+        <form method="GET" action="thankyou.html">
+        <label>Full Name*: <input type="text" name="fullname" pattern="[A-Za-z].{5,}" required></label>
+        <label>Email: <input type="email" name="email" placeholder="something@email.com"></label>
+        <label>Phone*: <input type="tel" name="phone" required></label>
+        <label>Zip Code: <input type="number" name="zipcode" required></label>
+        <label>Storm Date: <input type="date" name="stormdate"></label>
+        <label>Storm Type:<input name="typeofstorm" list="typeofstorm"></label>
+
+        <datalist id="typeofstorm">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+        </datalist>
+
+        <label class="rate" for="rating">Storm Severity:
+            <input type="range" id="rating" value="0" min="0" max="10"
+                oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">0</span>
+        </label>
+        <label>Storm Type: 
+            <select>
+                <option value="" selected="true" disabled="disabled">Select Region &darr;</option>
+                <option value="Preston">Preston</option>
+                <option value="SodaSprings">Soda Springs</option>
+                <option value="FishHaven">Fish Haven</option>
+            </select>
+        </label>
+        <label class="danger">Are you in danger?</label>
+        <label class="onside"><input type="radio" name="choice" value="yes">Yes</label>
+        <label class="onside"><input type="radio" name="choice" value="no"> No</label>
+        <label class="onside"><input type="radio" name="choice" value="maybe"> Maybe</label>
+
+        <label>Additional Information:<textarea name="addinfo"></textarea></label>
+
+        <input type="submit" value="Save Me" name="Saveme" class="submitButton">
+    </form>
+
+    </main>
+    <footer>&copy; High Today | Cindy Correa<br><span id="currentdate"></span>
+    </footer>
+    <script src="./js/rating.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webFontLoad.js"></script>
+</body>
+
+</html>
