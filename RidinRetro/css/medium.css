@@ -1,0 +1,28 @@
+@media only screen and (min-width: 600px) {
+
+
+    .catch-and-call {
+        font-size: 1em;
+    }
+
+    .homegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .preview {
+        margin: auto;
+        text-align: center;
+    }
+    .preview img {
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+
+    .social img {
+        width: 40px;
+    }
+}

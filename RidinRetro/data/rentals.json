@@ -1,0 +1,64 @@
+{
+    "rentals": [
+      {
+        "type": "Motor Scooter",
+        "name": "Honda Metropolitan (49cc)",
+        "picture": "metro.jpg",
+        "capability": "1 person",
+        "r-halfday": 20,
+        "r-fullday": 30,
+        "w-halfday": 25,
+        "w-fullday": 35
+      },
+      {
+        "type": "Motor Scooter",
+        "name": "Honda Dio (1100cc)",
+        "picture": "dio.jpg",
+        "capability": "2 person",
+        "r-halfday": 30,
+        "r-fullday": 40,
+        "w-halfday": 35,
+        "w-fullday": 45
+      },
+      {
+        "type": "Motor Scooter",
+        "name": "Honda PCX150 (149cc)",
+        "picture": "pcx150.jpg",
+        "capability": "2 person",
+        "r-halfday": 40,
+        "r-fullday": 50,
+        "w-halfday": 45,
+        "w-fullday": 55
+      },
+      {
+        "type": "ATV Side-by-Side",
+        "name": "Honda Pioneer",
+        "picture": "pioneer.jpg",
+        "capability": "4 person max",
+        "r-halfday": 50,
+        "r-fullday": 70,
+        "w-halfday": 60,
+        "w-fullday": 80
+      },
+      {
+        "type": "Jeep Wrangler",
+        "name": "2-door, manual, open air",
+        "picture": "jeep2door.jpg",
+        "capability": "4 person max",
+        "r-halfday": 60,
+        "r-fullday": 85,
+        "w-halfday": 70,
+        "w-fullday": 90
+      },
+      {
+        "type": "Jeep Wrangler",
+        "name": "4-door, manual, with AC",
+        "picture": "jeep4door.jpg",
+        "capability": "5 person max",
+        "r-halfday": 70,
+        "r-fullday": 100,
+        "w-halfday": 85,
+        "w-fullday": 125
+      }
+    ]
+  }

@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1000px) {
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header section h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .navigation li {
+        display: inline-block;
+        text-align: right;
+        padding: 0 2em;
+    }
+
+    .catch-and-call {
+        font-size: 1.5em;
+    }
+
+    .summary {
+        font-size: 1.5em;
+    }
+
+    .preview img {
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+
+    .social img {
+        width: 50px;
+    }
+
+}
