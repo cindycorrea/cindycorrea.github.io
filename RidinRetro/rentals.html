@@ -41,7 +41,7 @@
         <h1>Rentals</h1>
         <div class="rentals"></div>
         <h1>Requirements</h1>
-        <ul>
+        <ul id="requirements">
             <li>A $50 security deposit is required to confirm reservations.</li>
             <li>A valid drivers license isA valid drivers license is required in hand at time of rental.</li>
             <li>No one under 12 years of age are allowed to ride on the scooters.</li>
@@ -55,25 +55,28 @@
         </ul>
 
         <h1>Prices</h1>
-        <table>
-           <tr>
-               <th>Price Chart (includes taxes)</th>
-           </tr>
-           <tr>
-               <th></th>
-               <th>Reservations</th>
-               <th>Walk-In</th>
-           </tr>
-           <tr>
-               <th>Rental Type</th>
-               <th>Capacity</th>
-               <th>Half Day (3 hrs)</th>
-               <th>Full Day (3 hrs)</th>
-               <th>Half Day (3 hrs)</th>
-               <th>Full Day (3 hrs)</th>
-           </tr>
-           <tbody class="prices"></tbody>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th colspan="6">Price Chart (includes taxes)</th>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="2">Reservations</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Capacity</th>
+                    <th>Half Day*</th>
+                    <th>Full Day</th>
+                    <th>Half Day*</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody class="prices"></tbody>
         </table>
+        <p>*Half day is 3 hours</p>
 
     </main>
 

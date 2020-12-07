@@ -3,6 +3,7 @@
 body {
     font-family: 'Jura', sans-serif;
     background-color: #344058;
+    color: #344058;
 }
 
 main {
@@ -12,20 +13,13 @@ main {
     padding: 1em;
 }
 
-
 h1,
 h2 {
     font-family: 'Sansita Swashed', cursive;
-    color: #344058;
+    color: #B2262A;
     text-align: center;
 }
-ul {
-    max-width: 600px;
-    margin: auto;
-    padding: 1em;
-    line-height: 1.8em;
-    list-style-type: square;
-}
+
 
 header {
     display: flex;
@@ -40,7 +34,7 @@ header img {
 
 header section h1 {
     display: inline;
-    color: firebrick;
+    color: #B2262A;
     font-size: 2em;
     margin-left: .2em;
 }
@@ -69,7 +63,7 @@ header section h1 {
 .navigation li {
     display: none;
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 .navigation a {
@@ -120,7 +114,14 @@ header section h1 {
     top: 35%;
     width: 100%;
     text-align: center;
-    font-size: .8em;
+    font-size: .6em;
+}
+#requirements {
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    line-height: 1.8em;
+    list-style-type: square;
 }
 
 #booknow {
@@ -134,6 +135,29 @@ header section h1 {
 #booknow:hover {
     transition: .5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
+}
+
+#table {
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid #344058;
+}
+
+#table tr, td, th{
+    border: .1em solid #344058;
+    padding: .5em;
+    text-align: center;
+    font-size: .8em;
+}
+
+#table thead tr:nth-child(1) {
+    color: white;
+    background: #344058;
+}
+
+.prices tr:nth-child(odd) {
+    background: rgba(194, 193, 203, .4);
 }
 
 .summary {
@@ -169,7 +193,7 @@ header section h1 {
 }
 
 .social img {
-    width: 30px;
+    width: 20px;
     border-radius: 50%;
     margin: 1em;
 }
@@ -183,6 +207,7 @@ footer {
     background-color: #8C929E;
     padding: 1em;
     text-align: center;
+    font-size: .7em;
 }
 
 footer a:link,

@@ -48,7 +48,7 @@ document.getElementById("lastUpdated").textContent = document.lastModified;
 //end last updated
 
 //Start rentals build
-const requestURL = 'https://raw.githubusercontent.com/cindycorrea/cindycorrea.github.io/18398fb95e8a85180f5d83b410fca3510e15a781/RidinRetro/data/rentals.json';
+const requestURL = 'https://raw.githubusercontent.com/cindycorrea/cindycorrea.github.io/master/RidinRetro/data/rentals.json';
 
 fetch(requestURL)
     .then(function (response) {
@@ -88,14 +88,24 @@ fetch(requestURL)
             let name2 = document.createElement('td');
             let persons = document.createElement('td');
             let walkHalf = document.createElement('td');
+            let walkFull = document.createElement('td');
+            let resHalf = document.createElement('td');
+            let resFull = document.createElement('td');
 
 
             name2.textContent = rentals[i].name;
             persons.textContent = rentals[i].capability;
-            walkHalf.textContent = rentals[i].w-halfday;
+            walkHalf.textContent = "$" + rentals[i].whalfday;
+            walkFull.textContent = "$" + rentals[i].wfullday;
+            resHalf.textContent = "$" + rentals[i].rhalfday;
+            resFull.textContent = "$" + rentals[i].rfullday;
 
             tr.appendChild(name2);
             tr.appendChild(persons);
+            tr.appendChild(walkHalf);
+            tr.appendChild(walkFull);
+            tr.appendChild(resHalf);
+            tr.appendChild(resFull);
 
             document.querySelector('tbody.prices').appendChild(tr);
 
