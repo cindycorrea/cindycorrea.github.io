@@ -94,7 +94,7 @@ fetch(requestURL)
 
 
             name2.textContent = rentals[i].name;
-            persons.textContent = rentals[i].capability;
+            persons.textContent = rentals[i].person;
             walkHalf.textContent = "$" + rentals[i].whalfday;
             walkFull.textContent = "$" + rentals[i].wfullday;
             resHalf.textContent = "$" + rentals[i].rhalfday;

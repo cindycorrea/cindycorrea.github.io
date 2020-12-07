@@ -22,6 +22,11 @@
         width: 200px;
     }
 
+    #table tr, td, th{
+        font-size: 1em;
+    }
+    
+
     .social img {
         width: 40px;
     }
