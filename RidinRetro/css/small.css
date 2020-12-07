@@ -53,7 +53,6 @@ header section h1 {
 
 .navigation {
     padding: 0;
-    margin: 1em;
 }
 
 .navigation li:first-child {
@@ -115,7 +114,12 @@ header section h1 {
     width: 100%;
     text-align: center;
     font-size: .6em;
+    
 }
+.catch-and-call h2 {
+    color: #344058;
+}
+
 #requirements {
     max-width: 600px;
     margin: auto;
