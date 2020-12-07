@@ -9,6 +9,7 @@ main {
     background-color: white;
     margin: auto;
     margin-top: 5em;
+    padding: 1em;
 }
 
 
@@ -16,6 +17,14 @@ h1,
 h2 {
     font-family: 'Sansita Swashed', cursive;
     color: #344058;
+    text-align: center;
+}
+ul {
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    line-height: 1.8em;
+    list-style-type: square;
 }
 
 header {
@@ -126,31 +135,33 @@ header section h1 {
     transition: .5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
 }
+
 .summary {
     width: 50%;
     margin: auto;
     text-align: center;
     font-size: 1em;
 }
-.homegrid {
+.rentals {
     display: grid;
     grid-gap: 1em;
 }
 
-.preview {
+.rentals div,
+.rentals section {
     width: 75%;
     margin: auto;
     text-align: center;
 }
 
-.preview img:hover {
+.rentals img:hover {
     transition: .5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
 }
-.preview img {
+.rentals img {
     display: block;
     margin: auto;
-    width: 200px;
+    width: 250px;
 }
 
 .social {

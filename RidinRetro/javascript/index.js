@@ -48,31 +48,57 @@ document.getElementById("lastUpdated").textContent = document.lastModified;
 //end last updated
 
 //Start rentals build
-const requestURL = 'https://www.dropbox.com/s/hfwzol425np3240/rentals.json?dl=0';
+const requestURL = 'https://raw.githubusercontent.com/cindycorrea/cindycorrea.github.io/18398fb95e8a85180f5d83b410fca3510e15a781/RidinRetro/data/rentals.json';
 
 fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
 
-    then(function (jsonObject) {
+    .then(function (jsonObject) {
         const rentals = jsonObject['rentals'];
+        console.log(rentals);
         for (let i = 0; i < rentals.length; i++) {
+            //rental summary start
             let section = document.createElement('section');
             let div = document.createElement('div');
             let img = document.createElement('img');
-            let p = document.createElement('p');
+            let type = document.createElement('p');
+            let name = document.createElement('p');
+            let capability = document.createElement('p');
 
-            img.setAttribute('src', './images/' + rentals[i].picture);
-            img.setAttribute('alt', rentals[i].type + "</br>" + rentals[i].name);
-            p.textContent = rentals[i].type + "</br>" + rentals[i].name + "</br>" + rentals[i].capability;
+            img.setAttribute('src', '../images/' + rentals[i].picture);
+            img.setAttribute('alt', rentals[i].type + '\n' + rentals[i].name);
+            type.textContent = rentals[i].type;
+            name.textContent = rentals[i].name;
+            capability.textContent = rentals[i].capability;
 
-            div.appendChild(img);
-            div.appendChild(p);
+            section.appendChild(img);
+            div.appendChild(type);
+            div.appendChild(name);
+            div.appendChild(capability);
 
             section.appendChild(div);
 
             document.querySelector('div.rentals').appendChild(section);
+            //rental summary end
+
+            //prices table start
+            let tr = document.createElement('tr');
+            let name2 = document.createElement('td');
+            let persons = document.createElement('td');
+            let walkHalf = document.createElement('td');
+
+
+            name2.textContent = rentals[i].name;
+            persons.textContent = rentals[i].capability;
+            walkHalf.textContent = rentals[i].w-halfday;
+
+            tr.appendChild(name2);
+            tr.appendChild(persons);
+
+            document.querySelector('tbody.prices').appendChild(tr);
+
         }
     });
 //end rentals build

@@ -5,18 +5,18 @@
         font-size: 1em;
     }
 
-    .homegrid {
+    .rentals {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 80%;
         margin: auto;
     }
     
-    .preview {
+    .rentals div {
         margin: auto;
         text-align: center;
     }
-    .preview img {
+    .rentals img {
         display: block;
         margin: auto;
         width: 200px;
