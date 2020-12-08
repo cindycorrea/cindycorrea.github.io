@@ -67,7 +67,7 @@ fetch(requestURL)
             let name = document.createElement('p');
             let capability = document.createElement('p');
 
-            img.setAttribute('src', '../images/' + rentals[i].picture);
+            img.setAttribute('src', './images/' + rentals[i].picture);
             img.setAttribute('alt', rentals[i].type + '\n' + rentals[i].name);
             type.textContent = rentals[i].type;
             name.textContent = rentals[i].name;
