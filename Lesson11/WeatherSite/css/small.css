@@ -234,15 +234,6 @@ th {
     text-align: right;
 }
 
-/*.example {
-    display: block;
-    border: .2em dotted #eab934;
-    font-weight: 700;
-    padding: .5em;
-    margin: .5em;
-    text-align: center;
-}*/
-
 .forecast {
     font-size: .5em;
     display: none;
@@ -351,6 +342,10 @@ textarea {
     margin-top: .2em;
     padding: .5em;
     font-size: 1em;
+}
+
+input[name=birthdate] {
+    display: inline;
 }
 
 .onside {

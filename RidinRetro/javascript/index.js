@@ -112,3 +112,35 @@ fetch(requestURL)
         }
     });
 //end rentals build
+
+//weather start
+const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.5083&lon=-86.9458&exclude=hourly,minutely&units=imperial&appid=1ad91da0351622e04f82f3950739cdaa"
+
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        document.getElementById('current').textContent = (jsObject.current.temp).toFixed(0) + "\u00B0F";
+        document.getElementById('conditions').textContent = jsObject.current.weather[0].main;
+        document.getElementById('humidity').textContent = jsObject.current.humidity + "%";
+
+        //weather end
+
+        //forecast start
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const d = new Date;
+        for (let day = 0; day < 3; day++) {
+
+            let tr = document.createElement('tr');
+            let dayName = document.createElement('td');
+            let current = document.createElement('td');
+
+            dayName.textContent = weekdays[(d.getDay() % 7) + day + 1];
+            current.textContent = (jsObject.daily[day].temp.day).toFixed(0) + "\u00B0F";
+
+            tr.appendChild(dayName);
+            tr.appendChild(current);
+
+            document.querySelector('table.forecast').appendChild(tr);
+        }
+    });

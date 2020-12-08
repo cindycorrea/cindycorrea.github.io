@@ -39,6 +39,15 @@ header section h1 {
     margin-left: .2em;
 }
 
+.weatherupdate {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+}
+.weatherupdate table {
+    margin: auto;
+}
+
 .navigation ul {
     font-size: 1em;
     position: relative;
@@ -114,8 +123,9 @@ header section h1 {
     width: 100%;
     text-align: center;
     font-size: .7em;
-    
+
 }
+
 .catch-and-call h2 {
     color: #344058;
 }
@@ -136,6 +146,7 @@ header section h1 {
     background-color: #B2262A;
     color: white;
 }
+
 #booknow:hover {
     transition: .5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
@@ -144,12 +155,14 @@ header section h1 {
 #table {
     overflow: auto;
     width: 75%;
-     margin: auto;
+    margin: auto;
     border-collapse: collapse;
     border: 2px solid #344058;
 }
 
-#table tr, td, th{
+#table tr,
+td,
+th {
     border: .1em solid #344058;
     padding: .5em;
     text-align: center;
@@ -161,6 +174,72 @@ header section h1 {
     background: #344058;
 }
 
+
+
+
+label {
+    display: block;
+    padding: 1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input,
+textarea {
+    display: block;
+    margin-top: .2em;
+    padding: .5em;
+    font-size: 1em;
+}
+
+.onside {
+    display: inline-flex;
+}
+
+select {
+    -webkit-appearance: none;
+    margin: .3em;
+    padding: .5em;
+    color: #465c69;
+    font-size: 1em;
+}
+
+input[type=radio] {
+    margin-right: .5em;
+    transform: scale(1.5);
+}
+
+.danger {
+    margin: 0;
+}
+
+.submitButton {
+    border: none;
+    background-color: #465c69;
+    color: white;
+    border-radius: .75rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    margin-top: .75em;
+}
+
+form p {
+    overflow: auto;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+
+
+
+
+
+
 .prices tr:nth-child(odd) {
     background: rgba(194, 193, 203, .4);
 }
@@ -171,6 +250,7 @@ header section h1 {
     text-align: center;
     font-size: 1em;
 }
+
 .rentals {
     display: grid;
     grid-gap: 1em;
@@ -187,6 +267,7 @@ header section h1 {
     transition: .5s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(21, 24, 9, 0.5);
 }
+
 .rentals img {
     display: block;
     margin: auto;
@@ -221,6 +302,7 @@ footer a:visited {
     text-decoration: none;
     color: white;
 }
+
 footer a:hover {
     color: #B2262A;
 }
