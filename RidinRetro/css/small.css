@@ -181,6 +181,10 @@ iframe {
     margin: auto;
 }
 
+form {
+    text-align: center;
+}
+
 label {
     display: block;
     padding: 1em;
@@ -197,6 +201,7 @@ textarea {
     margin-top: .2em;
     padding: .5em;
     font-size: 1em;
+    margin: 1em auto;
 }
 
 .onside {
