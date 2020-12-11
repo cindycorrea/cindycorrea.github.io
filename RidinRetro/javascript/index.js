@@ -73,11 +73,11 @@ fetch(requestURL)
             name.textContent = rentals[i].name;
             capability.textContent = rentals[i].capability;
 
-            section.appendChild(img);
             div.appendChild(type);
             div.appendChild(name);
             div.appendChild(capability);
 
+            section.appendChild(img);
             section.appendChild(div);
 
             document.querySelector('div.rentals').appendChild(section);

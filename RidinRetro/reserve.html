@@ -40,93 +40,96 @@
     <main>
         <h1>Reservations</h1>
 
-        <form action="thankyou.php"id=reserve" method="POST">
+        <form action="thankyou.html" id=reserve" method="GET">
             <label>Full Name*: <input type="text" name="fullname" pattern="[A-Za-z].{5,}" required></label>
             <label>Email: <input type="email" name="email" placeholder="something@email.com"></label>
             <label>Phone*: <input type="tel" name="phone" required></label>
             <label>Address*: <input type="text" name="address" required></label>
             <label>Zip Code: <input type="text" name="zipcode" required></label>
             <label>Country*: <input type="text" name="county" required></label>
-            <label>Birth Date: <input type="text" name="birthdate" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}">
-            <label>Rental Type:<input name="typeofrental" list="typeofrental"></label>
-            <datalist id="day">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">
-                <option value="9">
-                <option value="10">
-                <option value="11">
-                <option value="12">
-                <option value="13">
-                <option value="14">
-                <option value="15">
-                <option value="16">
-                <option value="17">
-                <option value="18">
-                <option value="19">
-                <option value="20">
-                <option value="21">
-                <option value="22">
-                <option value="23">
-                <option value="24">
-                <option value="25">
-                <option value="26">
-                <option value="27">
-                <option value="28">
-                <option value="29">
-                <option value="30">
-                <option value="31">
-            </datalist>
+            <label>Birth Date: <input type="text" name="birthdate" placeholder="dd/mm/yyyy"
+                    pattern="\d{1,2}/\d{1,2}/\d{4}">
+                <label>Rental Type:<input name="typeofrental" list="typeofrental"></label>
+                <datalist id="day">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                    <option value="11">
+                    <option value="12">
+                    <option value="13">
+                    <option value="14">
+                    <option value="15">
+                    <option value="16">
+                    <option value="17">
+                    <option value="18">
+                    <option value="19">
+                    <option value="20">
+                    <option value="21">
+                    <option value="22">
+                    <option value="23">
+                    <option value="24">
+                    <option value="25">
+                    <option value="26">
+                    <option value="27">
+                    <option value="28">
+                    <option value="29">
+                    <option value="30">
+                    <option value="31">
+                </datalist>
 
-            <datalist id="month">
-                <option value="January">
-                <option value="February">
-                <option value="March">
-                <option value="April">
-                <option value="May">
-                <option value="June">
-                <option value="July">
-                <option value="August">
-                <option value="September">
-                <option value="October">
-                <option value="November">
-                <option value="December">
-            </datalist>
+                <datalist id="month">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="July">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December">
+                </datalist>
 
-            <datalist id="typeofrental">
-                <option value="Honda Metropolitan">
-                <option value="Honda Dio">
-                <option value="Honda PCX150">
-                <option value="Honda Pioneer">
-                <option value="Jeep 2-door">
-                <option value="Jeep 4-door">
-            </datalist>
+                <datalist id="typeofrental">
+                    <option value="Honda Metropolitan">
+                    <option value="Honda Dio">
+                    <option value="Honda PCX150">
+                    <option value="Honda Pioneer">
+                    <option value="Jeep 2-door">
+                    <option value="Jeep 4-door">
+                </datalist>
 
-            <label>Pick up Location:
-                <select>
-                    <option value="" selected="true" disabled="disabled">Select Location &darr;</option>
-                    <option value="Ferry Dock">Ferry Dock</option>
-                    <option value="Terminal Puerta Maya">Terminal Puerta Maya</option>
-                </select>
-            </label>
-            <label class="danger">How long would you like to rent?</label>
-            <label class="onside"><input type="radio" name="choice" value="Half Day"> Half Day</label>
-            <label class="onside"><input type="radio" name="choice" value="1 Full Day"> 1 Full Day</label>
-            <label class="onside"><input type="radio" name="choice" value="Multiple Days"> Mutiple Days</label>
-            <label>Ride Date:<input type="date" id="birthday" name="birthday"></label>
-            <label>Special Requests:<textarea name="addinfo"></textarea></label>
-            <label>Please read the following and check the box below: </label>
-            <p>A $50 security deposit is required to confirm reservations. A valid drivers license isA valid drivers
-                license is required in hand at time of rental. No one under 12 years of age are allowed to ride on the
-                scooters. Fuel charge not included. Unlimited mileage. Liability insurance is free of charge.
-                Reservations rate requires 24 hour prior notification. Free delivery to Cozumel hotel, Airbnb, or
-                private residence for 2+ day rentals. Payment via Google Pay, cash, credit card, debit card, or PayPal.
-                Rentals may be returned to either location.</p>
+                <label>Pick up Location:
+                    <select>
+                        <option value="" selected="true" disabled="disabled">Select Location &darr;</option>
+                        <option value="Ferry Dock">Ferry Dock</option>
+                        <option value="Terminal Puerta Maya">Terminal Puerta Maya</option>
+                    </select>
+                </label>
+                <label class="danger">How long would you like to rent?</label>
+                <label class="onside"><input type="radio" name="choice" value="Half Day"> Half Day</label>
+                <label class="onside"><input type="radio" name="choice" value="1 Full Day"> 1 Full Day</label>
+                <label class="onside"><input type="radio" name="choice" value="Multiple Days"> Mutiple Days</label>
+                <label>Ride Date:<input type="date" id="birthday" name="birthday"></label>
+                <label>Special Requests:<textarea name="addinfo"></textarea></label>
+                <label>Please read the following and check the box below: </label>
+                <p>A $50 security deposit is required to confirm reservations. A valid drivers license isA valid drivers
+                    license is required in hand at time of rental. No one under 12 years of age are allowed to ride on
+                    the
+                    scooters. Fuel charge not included. Unlimited mileage. Liability insurance is free of charge.
+                    Reservations rate requires 24 hour prior notification. Free delivery to Cozumel hotel, Airbnb, or
+                    private residence for 2+ day rentals. Payment via Google Pay, cash, credit card, debit card, or
+                    PayPal.
+                    Rentals may be returned to either location.</p>
                 <input type="checkbox" name="confirm" required>
                 <input name="form" type="submit"/>
         </form>
@@ -140,8 +143,8 @@
             <a href="http://www.youtube.com" target="_blank"><img src="./images/youtube75.png"></a>
             <a href="http://www.twitter.com" target="_blank"><img src="./images/twitter75.png"></a>
         </section>
-        <section>&copy; Ridin' Retro | Cindy Correa | <a href="attributions.html" target=""
-                _blank">Attributions</a><br><span id="currentdate"></span><br>Last Modified: <span
+        <section>&copy; Ridin' Retro | Cindy Correa | <a href="attributions.html"
+                target="_blank">Attributions</a><br><span id="currentdate"></span><br>Last Modified: <span
                 id="lastUpdated"></span></section>
     </footer>
     <script src="javascript/index.js"></script>

@@ -61,12 +61,12 @@
             </div>
         </div>
         <h2>More questions?<br>Contact us!</h2>
-        <form>
+        <form method="GET" action="contacted.html">
             <label>Full Name*: <input type="text" name="fullname" pattern="[A-Za-z].{5,}" required></label>
             <label>Email*: <input type="email" name="email" placeholder="something@email.com" required></label>
             <label>Phone: <input type="tel" name="phone"></label>
             <label>Questions and/or comments:<textarea name="addinfo"></textarea></label>
-            <input name="form" type="submit" />
+            <input type="submit" value="Save Me" name="Saveme" class="submitButton">
         </form>
 
 

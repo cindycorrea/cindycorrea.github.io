@@ -212,7 +212,7 @@ select {
     -webkit-appearance: none;
     margin: .3em;
     padding: .5em;
-    color: #465c69;
+    color: #344058;
     font-size: 1em;
 }
 
@@ -227,14 +227,13 @@ input[type=radio] {
 
 .submitButton {
     border: none;
-    background-color: #465c69;
+    background-color: #B2262A;
     color: white;
     border-radius: .75rem;
     padding: 1rem;
-    margin: 0 0 2rem 2%;
+    margin: 2em auto;
     width: 96%;
     max-width: 20rem;
-    margin-top: .75em;
 }
 
 form p {
