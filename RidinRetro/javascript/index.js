@@ -128,18 +128,21 @@ fetch(apiURL)
 
         //forecast start
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        const d = new Date;
-        for (let day = 0; day < 3; day++) {
+        //const d = new Date();
+        for (let day = 1; day <= 3; day++) {
 
             let tr = document.createElement('tr');
             let dayName = document.createElement('td');
             let current = document.createElement('td');
+            let conditions = document.createElement('td');
 
-            dayName.textContent = weekdays[(d.getDay() % 7) + day + 1];
+            dayName.textContent = weekdays[(d.getDay() + day) % 7];
             current.textContent = (jsObject.daily[day].temp.day).toFixed(0) + "\u00B0F";
+            conditions.textContent = jsObject.current.weather[0].main;
 
             tr.appendChild(dayName);
             tr.appendChild(current);
+            tr.appendChild(conditions);
 
             document.querySelector('table.forecast').appendChild(tr);
         }

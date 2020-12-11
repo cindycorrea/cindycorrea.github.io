@@ -174,8 +174,12 @@ th {
     background: #344058;
 }
 
-
-
+iframe {
+    width: 15em;
+    height: 15em;
+    border: 0;
+    margin: auto;
+}
 
 label {
     display: block;
@@ -251,13 +255,13 @@ form p {
     font-size: 1em;
 }
 
-.rentals {
+.grid {
     display: grid;
     grid-gap: 1em;
 }
 
-.rentals div,
-.rentals section {
+.grid div,
+.grid section {
     width: 75%;
     margin: auto;
     text-align: center;

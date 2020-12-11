@@ -344,10 +344,6 @@ textarea {
     font-size: 1em;
 }
 
-input[name=birthdate] {
-    display: inline;
-}
-
 .onside {
     display: inline-flex;
 }

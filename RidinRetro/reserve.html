@@ -40,15 +40,14 @@
     <main>
         <h1>Reservations</h1>
 
-        <form id="reserve" method="GET" action="thankyou.html">
+        <form action="thankyou.php"id=reserve" method="POST">
             <label>Full Name*: <input type="text" name="fullname" pattern="[A-Za-z].{5,}" required></label>
             <label>Email: <input type="email" name="email" placeholder="something@email.com"></label>
             <label>Phone*: <input type="tel" name="phone" required></label>
             <label>Address*: <input type="text" name="address" required></label>
             <label>Zip Code: <input type="text" name="zipcode" required></label>
             <label>Country*: <input type="text" name="county" required></label>
-            <label>Birth Date: <input list="day" name="birthdate" placeholder="day"><input list="month" name="birthdate"
-                    placeholder="month"><input type="text" name="birthdate" placeholder="year"></label>
+            <label>Birth Date: <input type="text" name="birthdate" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}">
             <label>Rental Type:<input name="typeofrental" list="typeofrental"></label>
             <datalist id="day">
                 <option value="1">
@@ -111,8 +110,7 @@
             <label>Pick up Location:
                 <select>
                     <option value="" selected="true" disabled="disabled">Select Location &darr;</option>
-                    <option value="Playa del Carmen Ferry Dock">Playa del Carmen Ferry Dock</option>
-                    <option value="el Centro de Cozueml">el Centro de Cozueml</option>
+                    <option value="Ferry Dock">Ferry Dock</option>
                     <option value="Terminal Puerta Maya">Terminal Puerta Maya</option>
                 </select>
             </label>
@@ -130,8 +128,7 @@
                 private residence for 2+ day rentals. Payment via Google Pay, cash, credit card, debit card, or PayPal.
                 Rentals may be returned to either location.</p>
                 <input type="checkbox" name="confirm" required>
-        <label>Words</label><input type="submit" value="Let's Roll!" name="letsroll" class="submitButton">
-
+                <input name="form" type="submit"/>
         </form>
 
     </main>

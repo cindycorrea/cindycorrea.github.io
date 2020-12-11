@@ -19,9 +19,9 @@
     <header>
         <a href="home.html">
             <img src="./images/logo.png" alt="Ridin' Retro Logo"></a>
-            <section>
-                <h1>Ridin'Retro</h1>
-            </section>
+        <section>
+            <h1>Ridin'Retro</h1>
+        </section>
     </header>
     <nav>
         <ul class="navigation">
@@ -38,22 +38,49 @@
 
 
     <main>
-        <h1>Contact</h1>
-        
-    </main>
+        <h1>Contact Us</h1>
+        <div class="grid">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7206327640138!2d-86.97453188201996!3d20.476664398263168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1607631149873!5m2!1sen!2sus"
+                id="cruise" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div>
+                <h2>Terminal Puerta Maya</h2>
+                <p>Located between Ron Jon Surf Shop and Three Amigos</p>
+                <p>77600 San Miguel de Cozumel<br>Quintana Roo, Mexico</p>
+                <p>+52 555 981 2020</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467.1073847233799!2d-86.95105795154575!3d20.512002410524754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1607630912273!5m2!1sen!2sus"
+                id="ferry" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-    <footer>
-        <section class="social">
-            <a href="http://www.facebook.com" target="_blank"><img src="./images/facebook75.png"></a>
-            <a href="http://www.instagram.com" target="_blank"><img src="./images/instagram75.png"></a>
-            <a href="http://www.youtube.com" target="_blank"><img src="./images/youtube75.png"></a>
-            <a href="http://www.twitter.com" target="_blank"><img src="./images/twitter75.png"></a>
-        </section>
-        <section>&copy; Ridin' Retro | Cindy Correa | <a href="attributions.html" target=""
+            <div>
+                <h2>Playa del Carmen Ferry Dock</h2>
+                <p>Located between 4 Splash and Carribean Reef</p>
+                <p>Av. Rafael E. Melgar 101<br>Quintana Roo, Mexico</p>
+                <p>+52 555 452 6654</p>
+            </div>
+        </div>
+        <form>
+            <label>Full Name*: <input type="text" name="fullname" pattern="[A-Za-z].{5,}" required></label>
+            <label>Email*: <input type="email" name="email" placeholder="something@email.com" required></label>
+            <label>Phone: <input type="tel" name="phone"></label>
+            <label>Questions and/or comments:<textarea name="addinfo"></textarea></label>
+            <input name="form" type="submit" />
+        </form>
+
+
+        <footer>
+            <section class="social">
+                <a href="http://www.facebook.com" target="_blank"><img src="./images/facebook75.png"></a>
+                <a href="http://www.instagram.com" target="_blank"><img src="./images/instagram75.png"></a>
+                <a href="http://www.youtube.com" target="_blank"><img src="./images/youtube75.png"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="./images/twitter75.png"></a>
+            </section>
+            <section>&copy; Ridin' Retro | Cindy Correa | <a href="attributions.html" target="
                 _blank">Attributions</a><br><span id="currentdate"></span><br>Last Modified: <span
-                id="lastUpdated"></span></section>
-    </footer>
-    <script src="javascript/index.js"></script>
+                    id="lastUpdated"></span></section>
+        </footer>
+        <script src="javascript/index.js"></script>
 
 </body>
 

@@ -5,14 +5,14 @@
         font-size: 1em;
     }
 
-    .rentals {
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 80%;
         margin: auto;
     }
     
-    .rentals div {
+    .grid {
         margin: auto;
         text-align: center;
     }
