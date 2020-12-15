@@ -15,7 +15,6 @@
 </head>
 
 <body>
-    <!--<div id="weather-alerts"></div>-->
     <marquee id="weather-alerts" behavior="scroll" direction="left"></marquee>
 
     <header>
@@ -75,8 +74,9 @@
                 <p>CONNECT with us.</p>
             </div>
         </section>
-        <section>
-            <h4>Weather Summary</h4>
+        <section class="weatherupdate">
+            <h2>Weather Summary</h2>
+            
             <table>
                 <tr>
                     <th>Current Temp:</th>
@@ -92,7 +92,8 @@
                 </tr>
             </table>
         </section>
-        <table class="forecast"></table>
+        <h2>Upcoming Weather</h2>
+        <table class="forecast weatherupdate"></table>
 
     </main>
 

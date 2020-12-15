@@ -155,6 +155,8 @@ header section h1 {
     color: #344058;
 }
 
+.weather-update
+
 #requirements {
     max-width: 600px;
     margin: auto;
@@ -239,15 +241,13 @@ select {
     padding: .5em;
     color: #344058;
     font-size: 1em;
+    margin-top: 2em;
+    border: 2px solid black;
 }
 
 input[type=radio] {
     margin-right: .5em;
     transform: scale(1.5);
-}
-
-.danger {
-    margin: 0;
 }
 
 .submitButton {
