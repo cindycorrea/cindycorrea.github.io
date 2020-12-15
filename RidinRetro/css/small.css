@@ -54,6 +54,7 @@ header section h1 {
     margin: auto;
     font-size: 1.5em;
 }
+
 .weatherupdate table {
     margin: auto;
 }
@@ -104,6 +105,7 @@ header section h1 {
     color: #344058;
     text-decoration: none;
 }
+
 #inline:hover {
     color: #B2262A;
 }
@@ -154,8 +156,6 @@ header section h1 {
 .catch-and-call h2 {
     color: #344058;
 }
-
-.weather-update
 
 #requirements {
     max-width: 600px;
@@ -243,6 +243,11 @@ select {
     font-size: 1em;
     margin-top: 2em;
     border: 2px solid black;
+}
+
+#closebutton {
+    color: black;
+    background-color: yellow;
 }
 
 input[type=radio] {
