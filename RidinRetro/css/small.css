@@ -108,6 +108,10 @@ header section h1 {
     color: #B2262A;
 }
 
+#reserve {
+    display: flex;
+}
+
 .navigation a:hover {
     color: #f2f4ff;
     transition: .5s;
