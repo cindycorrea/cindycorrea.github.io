@@ -146,4 +146,60 @@ fetch(apiURL)
 
             document.querySelector('table.forecast').appendChild(tr);
         }
+        //Weather Alerts
+
+        // Fake alert to test code functionality
+
+        /*jsObject["alerts"] = {
+            "sender_name": "NWS Tulsa (Eastern Oklahoma)",
+            "event": "Heat Advisory",
+            "start": 1597341600,
+            "end": 1597366800,
+            "description": "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible."
+        };*/
+
+        if (jsObject.alerts) {
+            document.getElementById("weather-alerts").innerHTML = jsObject.alerts.event + ": " + new Date(jsObject.alerts.start * 1000) + " to " + new Date(jsObject.alerts.end * 1000) + jsObject.alerts.description;
+        } else {
+            document.getElementById("weather-alerts").style.display = "none";
+        }
+        //End Weather Alerts
     });
+
+//Lazy Load Start
+function preloadImage(img) {
+    const src = img.getAttribute("data-src");
+    if (!src) {
+        return;
+    }
+    img.src = src;
+}
+
+const image = document.querySelectorAll("[data-src]");
+
+const imgOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px -50px 0px"
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    });
+}, imgOptions);
+image.forEach(image => {
+    imgObserver.observe(image);
+});
+
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px -200px 0px"
+
+};
+//Lazy Load end

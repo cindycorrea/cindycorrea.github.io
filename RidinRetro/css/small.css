@@ -39,6 +39,16 @@ header section h1 {
     margin-left: .2em;
 }
 
+#weather-alerts {
+    display: block;
+    font-size: 1.3em;
+    background-color: #B2262A;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding: .5em
+}
+
 .weatherupdate {
     text-align: center;
     margin: auto;
