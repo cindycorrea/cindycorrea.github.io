@@ -204,12 +204,6 @@ iframe {
     margin: auto;
 }
 
-
-
-
-
-
-
 #reserve {
     display: flex;
     flex-direction: column;
@@ -224,6 +218,7 @@ form {
 form p {
     border: 2px solid black;
     padding: 1em;
+    max-width: 60%;
 }
 
 label {
@@ -270,15 +265,6 @@ input[type=radio] {
     width: 75%;
     max-width: 12rem;
 }
-
-
-
-
-
-
-
-
-
 
 .prices tr:nth-child(odd) {
     background: rgba(194, 193, 203, .4);
