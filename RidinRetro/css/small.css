@@ -216,7 +216,7 @@ form {
 }
 
 form p {
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 1em;
     max-width: 60%;
 }
