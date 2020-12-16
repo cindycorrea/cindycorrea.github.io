@@ -59,6 +59,11 @@ header section h1 {
     margin: auto;
 }
 
+.navigation ul {
+    font-size: 1em;
+    position: relative;
+}
+
 .drop-down-contents {
     position: absolute;
     z-index: 1;
@@ -66,17 +71,12 @@ header section h1 {
     width: 100%;
 }
 
-.responsive li {
-    display: block;
-}
-
-.navigation ul {
-    font-size: 1em;
-    position: relative;
-}
-
 .navigation {
     padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
 }
 
 .navigation li:first-child {
@@ -107,6 +107,10 @@ header section h1 {
     color: #f2f4ff;
     transition: .5s;
     background-color: #B2262A;
+}
+
+.responsive li {
+    display: block;
 }
 
 #inline:link,
@@ -216,7 +220,7 @@ form {
 }
 
 form p {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 1em;
     max-width: 60%;
 }
